@@ -3,7 +3,7 @@ ncpus <- max(1L, parallel::detectCores())
 
 # CourseKata packages on CRAN
 install.packages(
-    c('supernova', 'mosaic', 'lsr', 'fivethirtyeight', 'Lock5withR', 'okcupiddata', 'dslabs'),
+    c('supernova', 'mosaic', 'lsr', 'fivethirtyeight', 'Lock5withR', 'Lock5Data', 'okcupiddata', 'dslabs'),
     Ncpus = ncpus
 )
 
