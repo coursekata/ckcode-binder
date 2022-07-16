@@ -1,1 +1,1 @@
-FROM uclatall/r-notebook:20220306013130f95e4c
+FROM uclatall/r-notebook:20220716213116d60ca2
