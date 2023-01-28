@@ -1,1 +1,1 @@
-FROM uclatall/r-notebook:sha-4e74242
+FROM uclatall/r-notebook:sha-677a4ae
