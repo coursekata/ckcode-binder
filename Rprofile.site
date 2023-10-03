@@ -23,4 +23,5 @@ options(
   )
 )
 
-require("coursekata")
+library("coursekata")
+filter <- dplyr::filter
