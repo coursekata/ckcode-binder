@@ -1,2 +1,2 @@
-FROM coursekata/essentials-notebook:2023-09-18
+FROM coursekata/essentials-notebook:sha-52c2722
 COPY --chown=${NB_UID}:${NB_GID} Rprofile.site /opt/conda/lib/R/etc/
