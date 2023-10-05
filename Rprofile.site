@@ -1,3 +1,6 @@
+# prevent "Registered S3 method overwritten" messages
+Sys.setenv(`_R_S3_METHOD_REGISTRATION_NOTE_OVERWRITES_` = "false")
+
 options(
   # Add R mimetype to specify how the plot returns from R to the browser.
   # https://notebook.community/andrie/jupyter-notebook-samples/Changing%20R%20plot%20options%20in%20Jupyter # nolint
@@ -22,5 +25,3 @@ options(
     )
   )
 )
-
-require("coursekata")
