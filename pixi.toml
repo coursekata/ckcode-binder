@@ -1,0 +1,16 @@
+[project]
+name = "ckcode-binder"
+version = "0.1.0"
+description = "`ckcode` Binder environment"
+authors = ["Adam Blake <adam@coursekata.org>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64", "linux-ppc64le", "linux-aarch64", "win-64"]
+
+[tasks]
+postinstall = "pre-commit install"
+update-badges = "python bin/update-badges.py"
+
+[dependencies]
+pre-commit = ">=3.6.0,<3.7"
+python = ">=3.12.0,<3.13"
+ruff = ">=0.1.8,<0.2"

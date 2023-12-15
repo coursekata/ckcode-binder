@@ -1,0 +1,34 @@
+# pre-commit is a tool to perform a predefined set of tasks manually and/or
+# automatically before git commits are made.
+#
+# Config reference: https://pre-commit.com/#pre-commit-configyaml---top-level
+#
+# Common tasks
+#
+# - Run on all files:   pre-commit run --all-files
+# - Register git hooks: pre-commit install --install-hooks
+default_language_version:
+  python: python3.12
+repos:
+  - repo: local
+    hooks:
+      # Update badge URLS in the README
+      - id: update-badges
+        name: update-badges
+        language: system
+        entry: pixi
+        args: ["run", "update-badges"]
+        pass_filenames: false
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.4
+    hooks:
+      # Lint: Python code (fixing issues automatically)
+      - id: ruff
+        args: [--fix]
+      # Autoformat: Python code
+      - id: ruff-format
+
+# pre-commit.ci config reference: https://pre-commit.ci/#configuration
+ci:
+  autoupdate_schedule: monthly
