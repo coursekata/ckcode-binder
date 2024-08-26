@@ -1,2 +1,2 @@
-FROM coursekata/essentials-notebook:latest
+FROM ghcr.io/coursekata/essentials-notebook:latest
 COPY --chown=${NB_UID}:${NB_GID} Rprofile.site /opt/conda/lib/R/etc/
