@@ -1,4 +1,4 @@
-FROM ghcr.io/coursekata/essentials-notebook:2026-09-25@sha256:3d301ba6850834a7f2b6416c967a2c35c885446ed1ebe684343230a635b018fc
+FROM ghcr.io/coursekata/exercises-notebook:2026-09-25@sha256:5602ee30cd11b9611f91ad6b59e52dc8e1ea6d8cd93ffd972dc2ad6685a85916
 
 USER root
 COPY --chown=${NB_UID}:${NB_GID} Rprofile.site /opt/ck/Rprofile.ckcode
